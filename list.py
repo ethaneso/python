@@ -5,8 +5,8 @@ liv = 20.0
 bed = 10.75
 bath = 9.50
 
-# Create list areas
-areas = [hall, kit, liv, bed, bath]
+# Adapt list areas
+areas = ["hallway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath]
 
 # Print areas
 print(areas)
