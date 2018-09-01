@@ -39,3 +39,5 @@ my notes for python
 [BMI](https://github.com/ethankclam/python/blob/master/bmi.py)
 
 [Subsetting Numpy Array](https://github.com/ethankclam/python/blob/master/subsetnparray.py)
+
+[Basic Statistics](https://github.com/ethankclam/python/blob/master/basicstat.py)
