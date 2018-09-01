@@ -31,14 +31,8 @@ print(place.replace('l', 'r'))
 # separated by 'h'
 print(place.split('h'))
 
-# Print out the number of o's in place
-print(place.count('o'))
-
 # Converts first character to Capital letter
 print(place.capitalize())
 
 # Converts to casefolded strings
 print(place.endswith('e'))
-
-# Returns index of substring
-print(place.index('o'))
