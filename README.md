@@ -33,3 +33,9 @@ my notes for python
 [List Methods](https://github.com/ethankclam/python/blob/master/listmethod.py)
 
 [Math Package](https://github.com/ethankclam/python/blob/master/mathpackage.py)
+
+[Numpy Array](https://github.com/ethankclam/python/blob/master/numpyarray.py)
+
+[BMI](https://github.com/ethankclam/python/blob/master/bmi.py)
+
+[Subsetting Numpy Array](https://github.com/ethankclam/python/blob/master/subsetnparray.py)
