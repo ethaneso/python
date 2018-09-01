@@ -27,3 +27,7 @@ bmi = np_weight_kg/np_height_m**2
 
 # Print out bmi
 print(bmi)
+
+# BMI is lower than 21
+light = np.array(bmi < 21)
+print(bmi[light])
