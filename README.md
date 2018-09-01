@@ -41,3 +41,7 @@ my notes for python
 [Subsetting Numpy Array](https://github.com/ethankclam/python/blob/master/subsetnparray.py)
 
 [Basic Statistics](https://github.com/ethankclam/python/blob/master/basicstat.py)
+***
+Accomplishment
+
+[Intro to Python for Data Science](https://www.datacamp.com/statement-of-accomplishment/course/b59bc7b0847cff077234449028561c1088218215)
