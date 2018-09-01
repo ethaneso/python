@@ -23,3 +23,13 @@ my notes for python
 [Extend list element](https://github.com/ethankclam/python/blob/master/extendlist.py)
 
 [Inner workings of list](https://github.com/ethankclam/python/blob/master/innerlist.py)
+
+[Functions](https://github.com/ethankclam/python/blob/master/functions.py)
+
+[Function: sorted](https://github.com/ethankclam/python/blob/master/funcsort.py)
+
+[String Methods](https://github.com/ethankclam/python/blob/master/stringmethod.py)
+
+[List Methods](https://github.com/ethankclam/python/blob/master/listmethod.py)
+
+[Math Package](https://github.com/ethankclam/python/blob/master/mathpackage.py)
