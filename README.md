@@ -12,7 +12,11 @@ Functions
 
 Numpy
 ---
-| [Numpy Array](https://github.com/ethankclam/python/blob/master/numpyarray.py) | [BMI](https://github.com/ethankclam/python/blob/master/bmi.py) | [Subsetting Numpy Array](https://github.com/ethankclam/python/blob/master/subsetnparray.py) | [Basic Statistics](https://github.com/ethankclam/python/blob/master/basicstat.py)
+| [Numpy Array](https://github.com/ethankclam/python/blob/master/numpyarray.py) | [BMI](https://github.com/ethankclam/python/blob/master/bmi.py) | [Subsetting Numpy Array](https://github.com/ethankclam/python/blob/master/subsetnparray.py) | [Basic Statistics](https://github.com/ethankclam/python/blob/master/basicstat.py) |
+
+Regular Expressions
+---
+| [Find](https://github.com/ethankclam/python/blob/master/find.py) | [Startswith](https://github.com/ethankclam/python/blob/master/startswitch.py) | [Search](https://github.com/ethankclam/python/blob/master/search.py) | [Find all](https://github.com/ethankclam/python/blob/master/findall.py) |
 ***
 Accomplishment
 ---
