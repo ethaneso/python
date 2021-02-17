@@ -8,10 +8,9 @@ from datetime import datetime
 
 ticker = "sample"
 
+stock = yf.Ticker(ticker)
 quarterly = stock.quarterly_financials
 yearly = stock.financials
-
-stock = yf.Ticker(ticker)
 financialsDataFrame = yearly
 
 financialsObject = financialsDataFrame.to_json()
