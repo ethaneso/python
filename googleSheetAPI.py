@@ -1,6 +1,7 @@
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime 
+import json
 import yfinance_ez as yf
 from datetime import datetime
 
@@ -8,6 +9,8 @@ tickerName = "sample"
 stock = yf.Ticker(tickerName)
 financialsDataFrame = stock.quarterly_financials
 
+financialsObject = msft.financials.to_json()
+y = json.loads(financialsObject)
 arra1 = []
 arra1.append(tickerName)
 arra2 = []
