@@ -9,7 +9,7 @@ tickerName = "sample"
 stock = yf.Ticker(tickerName)
 financialsDataFrame = stock.quarterly_financials
 
-financialsObject = msft.financials.to_json()
+financialsObject = financialsDataFrame.to_json()
 y = json.loads(financialsObject)
 arra1 = []
 arra1.append(tickerName)
