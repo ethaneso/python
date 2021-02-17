@@ -3,32 +3,40 @@ from google.oauth2 import service_account
 from datetime import datetime 
 import json
 import yfinance_ez as yf
+
 from datetime import datetime
 
-tickerName = "sample"
-stock = yf.Ticker(tickerName)
-financialsDataFrame = stock.quarterly_financials
+ticker = "sample"
+
+quarterly = stock.quarterly_financials
+yearly = stock.financials
+
+stock = yf.Ticker(ticker)
+financialsDataFrame = yearly
 
 financialsObject = financialsDataFrame.to_json()
 y = json.loads(financialsObject)
+
 arra1 = []
-arra1.append(tickerName)
-arra2 = []
+arra1.append(ticker)
+arra4 = []
 
 for yr, info in y.items():
+# print(yr)
     finYr = datetime.fromtimestamp(int(yr)/1000)
     date = finYr.strftime('%Y-%m-%d')
     arra1.append(date)
 
-arra2.append(arra1)
+arra4.append(arra1)
 
 financialsWithoutYr = financialsDataFrame.reset_index().to_numpy().tolist()
-
+print(financialsWithoutYr)
 for ele in financialsWithoutYr:
-  arra3 = arra2
-  arra3.append(ele)
-
-financials = arra3
+  arra5 = arra4
+  arra5.append(ele)
+  print(arra5)
+financials = arra5
+print(financials)
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 SERVICE_ACCOUNT_FILE = './keys.json'
@@ -38,20 +46,19 @@ creds = service_account.Credentials.from_service_account_file(
         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
 spreadsheet_id = 'sample_sheet_id'
-dataRange = 'sample_sheet_range'
+dataRange = 'Sheet6!A:E'
 
 service = build('sheets', 'v4', credentials=creds)
 
 sheet = service.spreadsheets()
-
-# get from spreadsheet
 # result = sheet.values().get(spreadsheetId=spreadsheet_id,
 #                            range=dataRange).execute()
 # values = result.get('values', [])
 # print(result);
 
-# write to spreadsheet
 request = sheet.values().append(spreadsheetId=spreadsheet_id,
-                                range="Sheet6!G1:L24",
+                                range=dataRange,
                                 valueInputOption="USER_ENTERED",
                                 body={"values":financials}).execute()
+
+print(request)
